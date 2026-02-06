@@ -1,73 +1,106 @@
-# React + TypeScript + Vite
+# Utility Tools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [https://imdeepmind.com/utility-tools](https://imdeepmind.com/utility-tools)
 
-Currently, two official plugins are available:
+A collection of simple yet powerful utility tools for developers, built with modern web technologies. This project aims to provide a clean, fast, and offline-capable set of tools for everyday development tasks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Utility Tools Screenshot](/public/logo.png)
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### **1. JSON Formatter**
+-   **Format & Beautify**: Instantly format minified JSON.
+-   **Validation**: Real-time error detection for invalid JSON.
+-   **Monaco Editor**: Powerful code editing experience with syntax highlighting.
+-   **Dark Mode**: Optimized for low-light environments.
+-   **Copy & Paste**: Quick buttons to manage your data.
 
-## Expanding the ESLint configuration
+### **2. Text Comparison Tool**
+-   **Diff Check**: Compare two texts side-by-side.
+-   **Granular Highlighting**: Spot differences at the character and word level.
+-   **Visual Gutter Indicators**: Quickly identify lines with additions or removals.
+-   **Dark Mode Support**: Custom contrasting colors for readability in dark mode.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-   **Frontend Framework**: React 19 + TypeScript
+-   **Build Tool**: Vite
+-   **Styling**: Tailwind CSS
+-   **Code Editor**: Monaco Editor (`@monaco-editor/react`)
+-   **Routing**: React Router DOM 7
+-   **Diff Logic**: `diff` package
+-   **SEO**: Native React 19 Metadata
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Follow these steps to set up the project locally on your machine.
+
+### Prerequisites
+-   Node.js (v20 or higher recommended)
+-   npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/imdeepmind/utility-tools.git
+    cd utility-tools
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Navigate to `http://localhost:5173/utility-tools/` (Base path is configured for production).
+
+## 📂 Project Structure
+
+```
+utility-tools/
+├── public/              # Static assets (logo, favicon)
+├── src/
+│   ├── components/      # Reusable components (Navbar, CodeEditor, SEO)
+│   ├── context/         # Global state (ThemeContext)
+│   ├── pages/           # Page components (Home, JsonFormatter, TextComparison)
+│   ├── App.tsx          # Main application component & Routing
+│   ├── main.tsx         # Entry point & Providers
+│   └── index.css        # Global styles & Tailwind directives
+├── package.json         # Dependencies & Scripts
+└── vite.config.ts       # Vite Configuration
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🤝 Contribution Guidelines
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Contributions are welcome! If you'd like to improve this project, please follow these steps:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Fork the repository**.
+2.  **Create a new branch** for your feature or bug fix:
+    ```bash
+    git checkout -b feature/amazing-feature
+    ```
+3.  **Commit your changes**:
+    ```bash
+    git commit -m "Add some amazing feature"
+    ```
+4.  **Push to the branch**:
+    ```bash
+    git push origin feature/amazing-feature
+    ```
+5.  **Open a Pull Request**.
+
+### Guidelines
+-   Ensure your code follows the existing style and conventions.
+-   Test common components like `CodeEditor` to ensure no regression.
+-   Check your changes in both Light and Dark modes.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
