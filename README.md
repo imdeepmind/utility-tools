@@ -6,7 +6,7 @@ A collection of simple yet powerful utility tools for developers, built with mod
 
 ![Utility Tools Screenshot](/public/logo.png)
 
-## 🚀 Features
+## Features
 
 ### **1. JSON Formatter**
 -   **Format & Beautify**: Instantly format minified JSON.
@@ -21,7 +21,7 @@ A collection of simple yet powerful utility tools for developers, built with mod
 -   **Visual Gutter Indicators**: Quickly identify lines with additions or removals.
 -   **Dark Mode Support**: Custom contrasting colors for readability in dark mode.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 -   **Frontend Framework**: React 19 + TypeScript
 -   **Build Tool**: Vite
@@ -31,7 +31,7 @@ A collection of simple yet powerful utility tools for developers, built with mod
 -   **Diff Logic**: `diff` package
 -   **SEO**: Native React 19 Metadata
 
-## 📦 Getting Started
+## Getting Started
 
 Follow these steps to set up the project locally on your machine.
 
@@ -60,7 +60,7 @@ Follow these steps to set up the project locally on your machine.
 4.  **Open in Browser**
     Navigate to `http://localhost:5173/utility-tools/` (Base path is configured for production).
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 utility-tools/
@@ -76,7 +76,7 @@ utility-tools/
 └── vite.config.ts       # Vite Configuration
 ```
 
-## 🤝 Contribution Guidelines
+## Contribution Guidelines
 
 Contributions are welcome! If you'd like to improve this project, please follow these steps:
 
@@ -100,7 +100,7 @@ Contributions are welcome! If you'd like to improve this project, please follow 
 -   Test common components like `CodeEditor` to ensure no regression.
 -   Check your changes in both Light and Dark modes.
 
-## 📄 License
+## License
 
 This project is open-source and available under the [MIT License](LICENSE).
 
