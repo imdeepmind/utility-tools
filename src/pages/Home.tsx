@@ -30,6 +30,19 @@ function Home() {
             Format, validate, and beautify your JSON data with a powerful code editor.
           </p>
         </Link>
+        
+        {/* Text Comparison Card */}
+        <Link
+          to="/text-comparison"
+          className="block p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+        >
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Text Comparison
+          </h5>
+          <p className="font-normal text-gray-700 dark:text-gray-400">
+            Compare two texts and highlight diffrences line by line.
+          </p>
+        </Link>
       </div>
     </div>
   )

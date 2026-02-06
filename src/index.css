@@ -7,3 +7,18 @@
     @apply text-gray-900 dark:text-gray-50 bg-gray-50 dark:bg-gray-900;
   }
 }
+
+@layer components {
+  .diff-remove {
+    @apply bg-red-200 dark:bg-[#451e22];
+  }
+  .diff-add {
+    @apply bg-green-200 dark:bg-[#133519];
+  }
+  .diff-gutter-remove {
+    @apply border-l-4 border-red-500;
+  }
+  .diff-gutter-add {
+    @apply border-l-4 border-green-500;
+  }
+}

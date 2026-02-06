@@ -1,7 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
+
 import Home from './pages/Home'
-import JsonFormatter from './pages/JsonFormatter'
 import About from './pages/About'
+import JsonFormatter from './pages/JsonFormatter'
+import TextComparison from './pages/TextComparison'
 import Layout from './components/Layout'
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="json-formatter" element={<JsonFormatter />} />
+        <Route path="text-comparison" element={<TextComparison />} />
         <Route path="about" element={<About />} />
       </Route>
     </Routes>

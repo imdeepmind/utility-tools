@@ -7,13 +7,15 @@ interface CodeEditorProps {
   language?: string;
   onChange?: (value: string | undefined) => void;
   height?: string;
+  onMount?: (editor: any, monaco: any) => void;
 }
 
 const CodeEditor: React.FC<CodeEditorProps> = ({ 
   value = '', 
   language = 'json', 
   onChange,
-  height = '500px'
+  height = '500px',
+  onMount
 }) => {
   const { theme } = useTheme();
 
@@ -25,6 +27,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
         value={value}
         theme={theme === 'dark' ? 'vs-dark' : 'light'}
         onChange={onChange}
+        onMount={onMount}
         options={{
           minimap: { enabled: false },
           scrollBeyondLastLine: false,
