@@ -7,12 +7,13 @@ const Navbar = () => {
   return (
     <nav className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <Link to="/" className="text-xl font-bold text-gray-900 dark:text-white">
-              Utility Tools
-            </Link>
-          </div>
+        <div className="flex justify-between items-center h-16">
+          <Link to="/" className="flex items-center space-x-3">
+             <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Utility Tools Logo" className="h-8 w-8" />
+             <span className="text-xl font-bold text-gray-900 dark:text-white">
+               Utility Tools
+             </span>
+          </Link>
           <div className="flex items-center space-x-4">
             <Link
               to="/"

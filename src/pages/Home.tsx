@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 function Home() {
   return (
     <div className="space-y-12">
+      <SEO 
+        title="Home" 
+        description="A collection of simple yet powerful utility tools for developers, including JSON Formatter and more." 
+      />
       <div className="text-center">
         <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
           Welcome to my Utility Tools

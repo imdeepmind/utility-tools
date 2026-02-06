@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CodeEditor from '../components/CodeEditor';
+import SEO from '../components/SEO';
 
 const JsonFormatter: React.FC = () => {
   const [input, setInput] = useState<string>('');
@@ -45,6 +46,10 @@ const JsonFormatter: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto space-y-8">
+      <SEO 
+        title="JSON Formatter" 
+        description="Validate, format, and beautify your JSON data instantly with this free online JSON formatter tool." 
+      />
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white">JSON Formatter</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
