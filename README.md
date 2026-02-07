@@ -21,6 +21,12 @@ A collection of simple yet powerful utility tools for developers, built with mod
 -   **Visual Gutter Indicators**: Quickly identify lines with additions or removals.
 -   **Dark Mode Support**: Custom contrasting colors for readability in dark mode.
 
+### **3. SQL Formatter**
+-   **Beautify SQL**: Standardize and format complex SQL queries.
+-   **Syntax Highlighting**: Color-coded SQL syntax for better readability.
+-   **Error Detection**: Catch syntax errors in your SQL.
+-   **Copy Generation**: One-click copy for the formatted output.
+
 ## Tech Stack
 
 -   **Frontend Framework**: React 19 + TypeScript
