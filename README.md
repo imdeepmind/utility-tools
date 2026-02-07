@@ -27,6 +27,12 @@ A collection of simple yet powerful utility tools for developers, built with mod
 -   **Error Detection**: Catch syntax errors in your SQL.
 -   **Copy Generation**: One-click copy for the formatted output.
 
+### **4. cURL Request Maker**
+-   **Visual Builder**: Create cURL commands with a user-friendly interface.
+-   **Dynamic Headers**: Add key-value headers easily.
+-   **Live Preview**: See the generated command as you type.
+-   **Method Support**: GET, POST, PUT, DELETE, and more.
+
 ## Tech Stack
 
 -   **Frontend Framework**: React 19 + TypeScript

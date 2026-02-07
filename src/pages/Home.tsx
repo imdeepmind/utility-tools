@@ -56,6 +56,19 @@ function Home() {
             Beautify and format your SQL queries with syntax highlighting.
           </p>
         </Link>
+
+        {/* cURL Request Maker Card */}
+        <Link
+          to="/curl-request-maker"
+          className="block p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+        >
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            cURL Request Maker
+          </h5>
+          <p className="font-normal text-gray-700 dark:text-gray-400">
+            Generate cURL commands easily for your API requests.
+          </p>
+        </Link>
       </div>
     </div>
   )

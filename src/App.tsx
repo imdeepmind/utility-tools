@@ -8,6 +8,7 @@ const Home = lazy(() => import('./pages/Home'));
 const JsonFormatter = lazy(() => import('./pages/JsonFormatter'));
 const SqlFormatter = lazy(() => import('./pages/SqlFormatter'));
 const TextComparison = lazy(() => import('./pages/TextComparison'));
+const CurlRequestMaker = lazy(() => import('./pages/CurlRequestMaker'));
 const About = lazy(() => import('./pages/About'));
 
 // Loading component
@@ -41,6 +42,11 @@ function App() {
           <Route path="text-comparison" element={
             <Suspense fallback={<Loading />}>
               <TextComparison />
+            </Suspense>
+          } />
+          <Route path="curl-request-maker" element={
+            <Suspense fallback={<Loading />}>
+              <CurlRequestMaker />
             </Suspense>
           } />
           <Route path="about" element={
