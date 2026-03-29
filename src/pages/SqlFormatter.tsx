@@ -30,7 +30,7 @@ const SqlFormatter: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto space-y-8">
+    <div className="w-full space-y-8">
       <SEO 
         title="SQL Formatter" 
         description="Format and beautify your SQL queries instantly online." 
@@ -42,24 +42,7 @@ const SqlFormatter: React.FC = () => {
         </p>
       </div>
 
-      <div className="space-y-6">
-        {/* Input Section */}
-        <div className="space-y-2">
-          <div className="flex justify-between items-center">
-            <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
-              Input SQL
-            </label>
-            <CopyButton text={input} />
-          </div>
-          <CodeEditor 
-            value={input} 
-            onChange={(val) => setInput(val || '')}
-            language="sql"
-            height="300px"
-          />
-        </div>
-
-        {/* Action Button */}
+      <div className="flex justify-center">
         <div className="flex flex-col items-center space-y-2">
           <button
             onClick={handleFormat}
@@ -76,20 +59,42 @@ const SqlFormatter: React.FC = () => {
             </span>
           )}
         </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-6 items-stretch">
+        {/* Input Section */}
+        <div className="flex-1 flex flex-col space-y-2">
+          <div className="flex justify-between items-center">
+            <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              Input SQL
+            </label>
+            <CopyButton text={input} />
+          </div>
+          <div className="flex-1">
+            <CodeEditor 
+              value={input} 
+              onChange={(val) => setInput(val || '')}
+              language="sql"
+              height="600px"
+            />
+          </div>
+        </div>
 
         {/* Output Section */}
-        <div className="space-y-2">
+        <div className="flex-1 flex flex-col space-y-2">
           <div className="flex justify-between items-center">
              <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
               Formatted SQL
             </label>
             <CopyButton text={output} />
           </div>
-          <CodeEditor 
-            value={output} 
-            language="sql"
-            height="500px" 
-          />
+          <div className="flex-1">
+            <CodeEditor 
+              value={output} 
+              language="sql"
+              height="600px" 
+            />
+          </div>
         </div>
       </div>
     </div>

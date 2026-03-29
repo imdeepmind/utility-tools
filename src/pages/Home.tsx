@@ -4,9 +4,9 @@ import SEO from '../components/SEO';
 function Home() {
   return (
     <div className="space-y-12">
-      <SEO 
-        title="Home" 
-        description="A collection of simple yet powerful utility tools for developers, including JSON Formatter and more." 
+      <SEO
+        title="Home"
+        description="A collection of simple yet powerful utility tools for developers, including JSON Formatter and more."
       />
       <div className="text-center">
         <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
@@ -17,7 +17,7 @@ function Home() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {/* JSON Formatter Card */}
         <Link
           to="/json-formatter"
@@ -30,7 +30,7 @@ function Home() {
             Format, validate, and beautify your JSON data with a powerful code editor.
           </p>
         </Link>
-        
+
         {/* Text Comparison Card */}
         <Link
           to="/text-comparison"

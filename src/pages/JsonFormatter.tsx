@@ -27,7 +27,7 @@ const JsonFormatter: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto space-y-8">
+    <div className="w-full space-y-8">
       <SEO 
         title="JSON Formatter" 
         description="Validate, format, and beautify your JSON data instantly with this free online JSON formatter tool." 
@@ -56,7 +56,19 @@ const JsonFormatter: React.FC = () => {
         </div>
       )}
 
-      <div className="flex flex-col gap-6 items-stretch">
+      <div className="flex justify-center">
+        <button
+          onClick={handleFormat}
+          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-[#e0223e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-200"
+        >
+          Format JSON
+          <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 -mr-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-6 items-stretch">
         <div className="flex-1 flex flex-col space-y-2">
           <div className="flex justify-between items-center">
             <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -69,21 +81,9 @@ const JsonFormatter: React.FC = () => {
               value={input} 
               onChange={(val) => setInput(val || '')}
               language="json"
-              height="400px" 
+              height="600px" 
             />
           </div>
-        </div>
-
-        <div className="flex justify-center py-4">
-          <button
-            onClick={handleFormat}
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-[#e0223e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-200"
-          >
-            Format JSON
-            <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 -mr-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-            </svg>
-          </button>
         </div>
 
         <div className="flex-1 flex flex-col space-y-2">
@@ -97,7 +97,7 @@ const JsonFormatter: React.FC = () => {
             <CodeEditor 
               value={output} 
               language="json"
-              height="400px"
+              height="600px"
               onChange={() => {}} 
             />
           </div>

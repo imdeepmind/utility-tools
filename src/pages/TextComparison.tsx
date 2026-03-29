@@ -102,7 +102,7 @@ const TextComparison: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto space-y-8">
+    <div className="w-full space-y-8">
       <SEO 
         title="Text Comparison Tool" 
         description="Compare two texts and highlight the differences." 
